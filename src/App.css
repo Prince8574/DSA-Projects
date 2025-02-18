@@ -1,0 +1,197 @@
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+  text-align: center;
+}
+
+.data-structure {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.data-structure h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #1e3a8a;
+}
+
+.input-group {
+  display: flex;
+  gap: 15px; /* Added larger gap between input elements */
+  justify-content: center; /* Center inputs horizontally */
+  margin-bottom: 20px; /* Increased margin for spacing */
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #374151;
+  background-color: #f9fafb;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-group input::placeholder {
+  color: #9ca3af;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background-color: #ffffff;
+}
+
+.input-group input:hover {
+  border-color: #9ca3af;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  margin-right: 10px; /* Added spacing between buttons */
+}
+
+.button.primary {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.button.primary:hover {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+.button.danger {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.button.danger:hover {
+  background-color: #dc2626;
+  transform: translateY(-1px);
+}
+
+.button.success {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.button.success:hover {
+  background-color: #059669;
+  transform: translateY(-1px);
+}
+
+/* Success message styling */
+.success-message {
+  color: #10b981;
+  font-size: 0.875rem;
+  margin-top: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.success-message.visible {
+  opacity: 1;
+}
+
+/* Highlight effect for inserted value */
+.highlight {
+  background-color: #d1fae5;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Animation for the list items */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.list-item {
+  animation: fadeIn 0.3s ease-in-out;
+  padding: 8px 12px;
+  margin-bottom: 8px; /* Added space between list items */
+  background-color: #f1f5f9;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+/* Output styling */
+.output {
+  margin-top: 20px; /* Increased margin for spacing */
+  font-size: 1rem;
+  color: #374151;
+  background-color: #f9fafb;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* src/App.css */
+
+/* Other styles... */
+
+.output {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #374151;
+  background-color: #f9fafb;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: left; /* Change to left-align list */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.list-item {
+  display: inline-block; /* Keeps items on the same line */
+  margin-right: 8px; /* Added spacing between items */
+  margin-bottom: 10px; /* Added vertical space between rows of items */
+  background-color: #d1fae5;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #065f46;
+  transition: background-color 0.3s ease;
+}
+
+.list-item:hover {
+  background-color: #bbf7d0;
+}
+
+/* Other styles... */
